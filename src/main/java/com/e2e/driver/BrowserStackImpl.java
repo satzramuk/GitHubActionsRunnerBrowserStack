@@ -88,7 +88,7 @@ public class BrowserStackImpl implements IDriver{
 
 	// Set other BrowserStack capabilities
 	caps.setCapability("project", "First Framework Project");
-	caps.setCapability("build", "Java Android");
+	caps.setCapability("build", buildName);
 	caps.setCapability("name", "first_FrameworkTest");
 
 
