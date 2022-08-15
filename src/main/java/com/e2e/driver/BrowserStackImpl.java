@@ -48,6 +48,9 @@ public class BrowserStackImpl implements IDriver{
 //			  
 //			  // Set URL of the application under test
 //			   caps.setCapability("app","bs://425b95f0776e8a0d56d2e0596fae129b652f8d55");
+			//Adding timeout
+                           caps.setCapability("uiautomator2ServerInstallTimeout", 60000);
+
 //			  
 //			 
 //			 // Specify device and os_version for testing 
