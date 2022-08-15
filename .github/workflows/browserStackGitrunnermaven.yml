@@ -27,4 +27,5 @@ jobs:
         BROWSERSTACK_USER: ${{ secrets.BROWSERSTACK_USER }}
         BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
         BROWSERSTACK_APP_ID: ${{ secrets.BROWSERSTACK_APP_ID }}
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN}}
       run: mvn clean test -Pandroid-test
