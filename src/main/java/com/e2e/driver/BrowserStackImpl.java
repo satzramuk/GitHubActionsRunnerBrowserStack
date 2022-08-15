@@ -78,7 +78,7 @@ public class BrowserStackImpl implements IDriver{
 	// Set your access credentials
 	String username = System.getenv("BROWSERSTACK_USERNAME");
 	String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
-	String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
+	String buildName = "TestFramework";
 	String appID = System.getenv("BROWSERSTACK_APP_ID");
 	
 	caps.setCapability("browserstack.user",username );
@@ -101,8 +101,7 @@ public class BrowserStackImpl implements IDriver{
 	// Initialize the remote Webdriver using BrowserStack remote URL
 	// and desired capabilities defined above
 
-	return new AndroidDriver<AndroidElement>(
-			new URL("http://hub.browserstack.com/wd/hub"), caps);
+	return new AndroidDriver<AndroidElement>(new URL("http://hub.browserstack.com/wd/hub"), caps);
 
 
 
