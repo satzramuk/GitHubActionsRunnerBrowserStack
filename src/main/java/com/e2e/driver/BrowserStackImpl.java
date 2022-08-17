@@ -76,7 +76,7 @@ public class BrowserStackImpl implements IDriver{
 //			 	
 	 //    GitHub Actions Mode Starts here
 	// Set your access credentials
-	String username = System.getenv("BROWSERSTACK_USERNAME");
+	String username = System.getenv("BROWSERSTACK_USER");
 	String accessKey = System.getenv("BROWSERSTACK_KEY");
 	String buildName = "TestFramework";
 	String appID = System.getenv("BROWSERSTACK_APP_ID");
